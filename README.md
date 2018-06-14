@@ -97,9 +97,9 @@ Code test for Medal
   1. Initial videos Page (Feed of videos)
     - 27.42 MiB
   2. Video page (when a certain video is clicked)
-    - 27.51
+    - 27.51 MiB
   3. Playing the video
-    - 27.63
+    - 27.63 MiB
   ** No memory leaks
   
 #### Android using the Android Profiler in Android Studio (Plays landscape)
@@ -115,10 +115,10 @@ Code test for Medal
 
 ## Specific Requirements
 ```
-iOS(Simulator):
+iOS:
 1. xcode
 
-Android(Emulator):
+Android:
 1. Android Studio
 2. YouTube must be installed to emulator
 ```
