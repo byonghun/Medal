@@ -3,7 +3,6 @@ package com.medal;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.airship.customwebview.CustomWebViewPackage;
 import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
@@ -27,7 +26,6 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-          new CustomWebViewPackage(),
           new ReactNativeYouTube(),
           new VectorIconsPackage(),
           new LinearGradientPackage()

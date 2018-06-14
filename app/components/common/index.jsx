@@ -1,6 +1,5 @@
 import { WebView } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import Video from 'react-native-video'
 import YouTube from 'react-native-youtube'
 
 export const VideoView = ({uri, id, watched}) => {
