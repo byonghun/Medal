@@ -100,9 +100,10 @@ Code test for Medal
     - 27.51 MiB
   3. Playing the video
     - 27.63 MiB
+    
   ** No memory leaks
   
-#### Android using the Android Profiler in Android Studio (Plays landscape)
+#### Android using the Android Profiler in Android Studio
   1. Initial videos page
     - 25.25 MB
   2. Video page
