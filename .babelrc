@@ -1,0 +1,39 @@
+{
+  "presets": ["react-native"],
+  "plugins": [
+    "transform-decorators-legacy",
+    ["auto-import", {
+      "declarations": [
+        {"default": "React", "members": ["Component"], "path": "react"},
+        {"members": ["connect"], "path": "react-redux"},
+        {"members": ["moment"], "path": "moment"},
+        {"members": [
+          "Platform",
+          "Dimensions",
+          "StyleSheet",
+          "View",
+          "ScrollView",
+          "Text",
+          "FlatList",
+          "TouchableOpacity",
+          "TouchableWithoutFeedback",
+          "Image"
+        ], "path": "react-native"},
+        {"members": [
+          "createStackNavigator",
+          "createBottomTabNavigator"
+        ], "path": "react-navigation"},
+        {"members": [
+          "find",
+          "findBy",
+          "merge",
+          "findIndex",
+          "map",
+          "slice"
+        ], "path": "lodash"}
+      ]
+    }],
+    ["extensible-destructuring", {
+      "mode": "optout", "impl": "normal"}]
+  ]
+}
