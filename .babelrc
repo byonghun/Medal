@@ -16,7 +16,6 @@
           "Text",
           "FlatList",
           "TouchableOpacity",
-          "TouchableWithoutFeedback",
           "Image"
         ], "path": "react-native"},
         {"members": [

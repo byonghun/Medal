@@ -1,17 +1,13 @@
 import { WebView } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import YouTube from 'react-native-youtube'
 
-export const VideoView = ({uri, id, watched}) => {
-  const RenderWebView = Platform.OS == 'android' ? YouTube : WebView
+export const VideoView = ({uri, id}) => {
   return (
-    <RenderWebView
+    <WebView
       style={styles.webView}
       videoId={id}
-      play={watched ? true : false}
-      fullscreen={watched ? true : false}
-      apiKey={"AIzaSyBoBiBsNWXjVYMZuYZvgzSv0wPjIqJ2XsU"}
       source={{uri}}
+      allowsInlineMediaPlayback={true}
     />
   )
 }
@@ -55,7 +51,8 @@ var styles = StyleSheet.create({
     width: '95%',
     marginTop: 15,
     height: 250,
-    alignSelf: 'center'
+    alignSelf: 'center',
+    zIndex: 1
   },
   checked: {
     borderColor: 'green',

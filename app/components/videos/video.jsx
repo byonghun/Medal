@@ -19,6 +19,7 @@ export class Video extends Component {
         horizontal
         showsHorizontalScrollIndicator={false}
         pagingEnabled
+        extraData={videos}
         data={videos}
         initialScrollIndex={findIndex(videos, ['id', id])}
         getItemLayout={this.getItemLayout}

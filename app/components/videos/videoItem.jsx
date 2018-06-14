@@ -13,7 +13,6 @@ export class VideoItem extends Component {
       id,
       index,
       width,
-      watchedVideo,
       videos,
       snippet: {
         channelTitle,
@@ -29,13 +28,12 @@ export class VideoItem extends Component {
           <TouchableOpacity
             activeOpacity={1}
             style={style.flex}
-            onPress={() => watchedVideo(id)}
+            onPress={this.onPress}
           >
-          <WebView
-            uri={`https://www.youtube.com/embed/${id}`}
-            id={id}
-            watched={videos[index-1].watched}
-          />
+            <WebView
+              uri={`https://www.youtube.com/embed/${id}?playsinline=1`}
+              id={id}
+            />
           </TouchableOpacity>
         </View>
         <View style={style.textContainer}>
@@ -59,6 +57,10 @@ export class VideoItem extends Component {
         </View>
       </ScrollView>
     )
+  }
+
+  onPress = () => {
+    this.props.watchedVideo(this.props.id)
   }
 
 

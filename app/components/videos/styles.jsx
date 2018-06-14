@@ -54,7 +54,7 @@ export const video = StyleSheet.create({
     height: 320
   },
   textContainer: {
-    marginTop: Platform.OS === "android" ? 0 : 20,
+    marginTop: 20,
     width: '90%',
     alignSelf: 'center'
   },

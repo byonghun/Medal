@@ -16,7 +16,6 @@ class Videos extends Component {
     }
     return (
       <FlatList
-        removeClippedSubviews={Platform.OS == 'android'}
         onEndReachedThreshold={0.5}
         keyExtractor={item => item.id}
         onEndReached={this.handleLoadMore}
