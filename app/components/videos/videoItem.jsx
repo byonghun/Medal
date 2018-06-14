@@ -51,7 +51,7 @@ export class VideoItem extends Component {
           </Text>
           <Text
             onPress={this.toggleClick}
-            numberOfLines={clicked ? null : 3}
+            numberOfLines={clicked ? null : 5}
             style={style.description}
           >
             {description}
